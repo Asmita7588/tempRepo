@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+
+/* Container for the candidate table */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Basic table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Table header and body cell padding and alignment */
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Style for table header */
+th {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* FontAwesome icon size */
+.fas {
+  font-size: 20px;
+}
+
+/* Update button styles */
+.update-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Delete button styles */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Add candidate button styles */
+.add-btn {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button.update {
+  background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.actions button.delete {
+  background-color: #f44336;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.add-candidate {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  table, th, td {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  th, td {
+    width: 100%;
+    padding: 8px;
+  }
+
+  tr {
+    margin-bottom: 20px;
+  }
+
+  .actions {
+    text-align: center;
   }
 }
